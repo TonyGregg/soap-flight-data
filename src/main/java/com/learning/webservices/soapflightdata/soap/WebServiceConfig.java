@@ -20,6 +20,10 @@ import org.springframework.xml.xsd.XsdSchema;
  * 
  * 3rd step is to create the wsdl
  * the wsdl url we want is something like /flight/flights.wsdl based on flight-detail.xsd
+ *
+ * End URL:
+ *
+ * http://locahost:8090/flight/flights.wsdl (flights is in the bean name of setDefaultWsdlDefn)
  * 
  * 
  * it is spring configuration
@@ -60,7 +64,7 @@ public class WebServiceConfig {
 	 * Namespace : http://github.com/TonyGregg/flight
 	 * 
 	 * 
-	 * @param flisghtSchema
+	 * @param flightSchema
 	 * @return
 	 */
 	@Bean(name="flights")
